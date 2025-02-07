@@ -1,2 +1,2 @@
-# js_algorithm
+# js-algorithm
 JavaScript Algorithm
