@@ -1,5 +1,5 @@
 function solveNqueens(n) {
-    let board = Array(n).fill().map(() => Array(n).fill(false)); // n x n matrix
+    let board = Array(n).fill().map(() => Array(n).fill(false)); // n * n matrix
     let solutions = []; // store all solutions
 
     function isValid(row, col) { // check if the current position is valid to place a queen
@@ -34,7 +34,7 @@ function solveNqueens(n) {
             if (isValid(row, col)) { // if the current position is valid to place a queen
                 board[row][col] = true; // place a queen
                 placeQueen(row + 1); // move to the next row
-                board[row][col] = false; // backtrack
+                board[row][col] = false; // backtracking
             }
         }
     }
